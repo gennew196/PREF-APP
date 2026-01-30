@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import Validation from "./SignupValidation";
 import axios from 'axios';
@@ -58,7 +58,7 @@ function Signup() {
                           </div>
                           <button type='submit' className='btn btn-success w-100 rounded-0'>Sign up</button>
                           <p>You agree to our Terms and Conditions</p>
-                          <a to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-no'></a>
+                          <Link to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-no'>Login</Link>
                     </form>
                 </div>
 
