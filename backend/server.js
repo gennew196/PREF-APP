@@ -55,9 +55,9 @@ app.post('/login',(req,res) => {
         if(err) { 
         return res.json("Error");
         }
-       console.log(data)
+       console.log(data.rows)
      
-        if(data.length > 0) {
+        if(data.rowCount > 0) {
         return res.json("Success");
     } else {
         return res.json("Failed");

@@ -26,10 +26,8 @@ function Login() {
         
             console.log("working")
            const res=await axios.post(`${BASE_URL}/login`, values)
-           if(res.status===200) {
-            alert("Data sent successfully")
-           }
-           console.log(res.data)
+           console.log(res)
+                  
             if(res.data === "Success") {   
                     navigate('/home');
                    } else {

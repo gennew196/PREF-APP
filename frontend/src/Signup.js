@@ -24,6 +24,7 @@ function Signup() {
         if(errors.name === "" && errors.email === "" && errors.password === "") {
             axios.post(`${BASE_URL}/signup`, values)
                 .then(res => {
+                      console.log(res)
                        navigate('/');
                 })                
                 .catch(err => console.log(err));
